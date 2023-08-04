@@ -1,0 +1,11 @@
+name: Esse é meu
+
+run-name: ${{ github.actor }} is testing meu primeiro workflow 🚀
+
+on: [push]
+
+jobs:
+  primeiro-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 Meu primeiro workflow ${{ github.event_name }} event."
